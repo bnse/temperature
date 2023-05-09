@@ -21,7 +21,7 @@ const AbsoluteZeroForFahrenheit Fahrenheit = -459.67
 
 // AbsoluteZero returns the Fahrenheit temperature of absolute zero (-459.67 °F).
 func (f Fahrenheit) AbsoluteZero() Fahrenheit {
-	return Fahrenheit(AbsoluteZeroForFahrenheit)
+	return AbsoluteZeroForFahrenheit
 }
 
 // IsValid returns true if the Fahrenheit temperature is valid (above absolute zero).

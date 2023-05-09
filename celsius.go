@@ -11,7 +11,7 @@ const AbsoluteZeroForCelsius Celsius = -273.15
 
 // AbsoluteZero returns the Celsius temperature of absolute zero (-273.15 °C).
 func (c Celsius) AbsoluteZero() Celsius {
-	return Celsius(AbsoluteZeroForCelsius)
+	return AbsoluteZeroForCelsius
 }
 
 // IsValid returns true if the Celsius temperature is valid (above absolute zero).

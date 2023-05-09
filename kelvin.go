@@ -20,7 +20,7 @@ const AbsoluteZeroForKelvin Kelvin = 0
 
 // AbsoluteZero is the lowest possible temperature in Kelvin.
 func (k Kelvin) AbsoluteZero() Kelvin {
-	return Kelvin(AbsoluteZeroForKelvin)
+	return AbsoluteZeroForKelvin
 }
 
 // IsValid returns true if the Kelvin temperature is valid (i.e., greater than or equal to AbsoluteZero).

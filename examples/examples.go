@@ -41,6 +41,7 @@ func main() {
 	c1 := temperature.Celsius(37.123)
 	fmt.Println(c1.IsValid())
 	fmt.Println(c1)
+	fmt.Println(c1.AbsoluteZero())
 	fmt.Println(c1.FixDecimal(1))
 	fmt.Println(c1.Fahrenheit())
 	fmt.Println(c1.Fahrenheit().FixDecimal(2))
