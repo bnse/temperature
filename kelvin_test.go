@@ -62,7 +62,7 @@ func TestKelvin_AbsoluteZero(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.k.AbsoluteZero(); got != tt.want {
+			if got := AbsoluteZero(tt.k); got != tt.want {
 				t.Errorf("Kelvin.AbsoluteZero() = %v, want %v", got, tt.want)
 			}
 		})
@@ -83,7 +83,7 @@ func TestKelvin_IsValid(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.k.IsValid(); got != tt.want {
+			if got := IsValid(tt.k); got != tt.want {
 				t.Errorf("Kelvin.IsValid() = %v, want %v", got, tt.want)
 			}
 		})

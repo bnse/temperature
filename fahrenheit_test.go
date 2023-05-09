@@ -62,7 +62,7 @@ func TestFahrenheit_AbsoluteZero(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.f.AbsoluteZero(); got != tt.want {
+			if got := AbsoluteZero(tt.f); got != tt.want {
 				t.Errorf("Fahrenheit.AbsoluteZero() = %v, want %v", got, tt.want)
 			}
 		})
@@ -85,7 +85,7 @@ func TestFahrenheit_IsValid(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := tt.f.IsValid(); got != tt.want {
+			if got := IsValid(tt.f); got != tt.want {
 				t.Errorf("Fahrenheit.IsValid() = %v, want %v", got, tt.want)
 			}
 		})
